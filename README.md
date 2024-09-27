@@ -1,27 +1,33 @@
 # Web2Touch
 
-- Version     : V0.1.0
-- Class       : Interactive Tool 
-- Requirement :
-  - window10
-  - Touchdesigner <= 2022.35320 (Warning:not compacity with 2023 version)
+ - Version     : V1.0.12
+ - Class       : Interactive Tool 
+ - Requirement :
+     Here is computer system what I task, if you have met trouble please commit into[ "Issues" ](https://github.com/Wingto/Web2Touch/issues)in github page.
+    - Window10/11/
+    - MacOS 14
+    - Touchdesigner099 == 2023 series
 
-- Author:
-  Wingto
+ - Author:
+    Wingto / Lizzo
 
-- Date:
-  06/02/2024
+ - Date:
+    07/09/2024
   
+- Features:
+  -  1.Slider *3
+  -  2.momentary button *9
+  -  3.QR code connect, easy to connect
+
 - How to use:
-    1. Chinese:https://www.bilibili.com/video/BV1Ye41117SW/?spm_id_from=333.999.0.0&vd_source=3eac7bf6d3967ebdd78e287eab5a8640
-    2. English: https://youtu.be/CwRa9YWyiWI?si=Qm4EUU3Xf13L52vY
-
+   - Basic setup:
+       1. Chinese:
+       6. English: 
       
-  
 ## Description:
   <br>Let's make mobile and browser connect with TouchDesigner!
 
-  <br>Here I developed simple canvus provide you to interact with computer graphic in touchdesigner using mobile phone or browser.
+  <br>Here I developed simple controller provide you to interact with computer graphic in touchdesigner using mobile phone or browser.
 
 
 
@@ -29,15 +35,24 @@
 - **Attribute Parameters**
   - **RunW2Touch**
     - Pop up a browser and create a empty canvus automatically .
+    
+  - **Client**
+    - (Read only), return what address connect with Touch.
+
+  - **Port**
+    - distribution customize port .
+
+  - **Startpulse**
+    - Refresh the IP address.
    
 - **Node interface**
   - **CHOP_out1**
-    - 5 channels
-      - u: the data in X position of drawing
-      - v: the data in Y position of drawing
-      - select: touch in the canvus
-      - rselect: untouch in the canvus
-      - refresh: whether page load in browser.
+    - 3 Channels:
+       - Slider value
+       
+  - **CHOP_out2**
+    -9 Sample:
+       - ButtonState:
         
   - **DAT_out1**
     - About information in this program
@@ -46,7 +61,7 @@
 
 
 ## Issue Known:
-- Just only one player, you can multi-devices to connect the program.
+- how many device can visit Web2Touch simultaneously.
 
 
 ## Contact:
@@ -55,4 +70,3 @@ The component still is public beta so it have set a privacy component, but I wil
 If you have any feedback contact me please.
 <br>email:627341343@qq.com
 <br>ins:[wingtoKwong](https://www.instagram.com/wingtokwong/)
-
